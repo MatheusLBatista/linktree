@@ -1,0 +1,32 @@
+{
+  "id": "123",
+  "nome": "Emília Andrade",
+  "fotoUrl": "/fotos/emilia.jpg",
+  "background": {
+    "tipo": "gradiente",
+    "valor": "linear-gradient(to right, #3a7bd5, #00d2ff)"
+  },
+  "estilos": {
+    "corLink": "#ffffff",
+    "corHover": "#cccccc",
+    "corTexto": "#ffffff",
+    "borderRadius": "12px"
+  },
+  "links": [
+    {
+      "icone": "blog",
+      "texto": "Blog",
+      "url": "https://blog.exemplo.com"
+    },
+    {
+      "icone": "github",
+      "texto": "GitHub",
+      "url": "https://github.com/emilia"
+    },
+    {
+      "icone": "linkedin",
+      "texto": "LinkedIn",
+      "url": "https://linkedin.com/in/emilia"
+    }
+  ]
+}
