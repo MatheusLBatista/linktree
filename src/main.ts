@@ -7,56 +7,28 @@ function getID(): string | null {
   return idUrl.get('id');
 }
 
-async function getData(id: any) {
-  const paramsId = getID();
-  if(!id) throw new Error('ID não encontrado!')
-
-  const response = await fetch('./data.json')
-  const data = await response.json()
-
-  const selected = data.find((item: any) => item.id === id)
-
-  console.log("Objeto correspondente:", selected);
-}
-
-function card() {
+function card(selected: any) {
   if(!container) return;
 
   container.innerHTML = `
       <div class="profile-pic">
-        <img src="" alt="Foto de perfil">
+        <img src="${selected.fotoUrl}" alt="Foto de perfil">
       </div>
 
       <div class="name">
-        <h2></h2>
+        <h2>${selected.nome}</h2>
       </div>
 
       <div class="links">
         <ul>
-          <li>
-            <img src="" alt="Ícone blog">
-            <a href="">Blog</a>
-          </li>
-          <li>
-            <img src="" alt="Ícone gitlab">
-            <a href="">GitLab</a>
-          </li>
-          <li>
-            <img src="" alt="Ícone github">
-            <a href="">GitHub</a>
-          </li>
-          <li>
-            <img src="" alt="Ícone linkedin">
-            <a href="">LinkedIn</a>
-          </li>
-          <li>
-            <img src="" alt="Ícone instagram">
-            <a href="">Instagram</a>
-          </li>
-          <li>
-            <img src="" alt="Ícone email">
-            <a href="">Enviar um e-mail</a>
-          </li>
+          ${selected.links.map((link: any) => {
+            return `
+              <li class='social-media-link'>
+                <img src="/icone/${link.icone}" alt="Ícone ${link.texto}">
+                <a href="${link.url}">${link.texto}</a>
+              </li>
+            `
+          }).join('')}
         </ul>
       </div>
 
@@ -66,5 +38,18 @@ function card() {
     `;
 }
 
-card()
-getData('123')
+async function getData() {
+  const paramsId = getID();
+  if(!paramsId) throw new Error('ID não encontrado!')
+
+  const response = await fetch('/data.json')
+  const data = await response.json()
+
+  const selected = data.find((item: any) => item.id === paramsId)
+
+  card(selected);
+
+  console.log("Objeto correspondente:", selected);
+}
+
+getData()
