@@ -14,11 +14,11 @@
       "borderRadius": "8px"
     },
     "links": [
-      { "icone": "blog", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github", "texto": "GitHub", "url": "https://github.com/emilia" },
-      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/emilia" },
-      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/emilia" },
-      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:emilia@exemplo.com" }
+      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/emilia" },
+      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/emilia" },
+      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/emilia" },
+      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:emilia@exemplo.com" }
     ]
   },
   {
@@ -36,11 +36,11 @@
       "borderRadius": "8px"
     },
     "links": [
-      { "icone": "blog", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github", "texto": "GitHub", "url": "https://github.com/tereza" },
-      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/tereza" },
-      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/tereza" },
-      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:tereza@exemplo.com" }
+      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/tereza" },
+      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/tereza" },
+      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/tereza" },
+      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:tereza@exemplo.com" }
     ]
   },
   {
@@ -58,11 +58,11 @@
       "borderRadius": "12px"
     },
     "links": [
-      { "icone": "blog", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github", "texto": "GitHub", "url": "https://github.com/marco" },
-      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/marco" },
-      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/marco" },
-      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:marco@exemplo.com" }
+      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/marco" },
+      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/marco" },
+      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/marco" },
+      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:marco@exemplo.com" }
     ]
   },
   {
@@ -80,11 +80,11 @@
       "borderRadius": "20px"
     },
     "links": [
-      { "icone": "blog", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github", "texto": "GitHub", "url": "https://github.com/jose" },
-      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/jose" },
-      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/jose" },
-      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:jose@exemplo.com" }
+      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/jose" },
+      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/jose" },
+      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/jose" },
+      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:jose@exemplo.com" }
     ]
   },
   {
@@ -102,11 +102,11 @@
       "borderRadius": "4px"
     },
     "links": [
-      { "icone": "blog", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github", "texto": "GitHub", "url": "https://github.com/eliana" },
-      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
-      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/eliana" },
-      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
+      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/eliana" },
+      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
+      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/eliana" },
+      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
     ]
   },
   {
@@ -124,11 +124,11 @@
       "borderRadius": "32px"
     },
     "links": [
-      { "icone": "blog", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github", "texto": "GitHub", "url": "https://github.com/eliana" },
-      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
-      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/eliana" },
-      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
+      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/eliana" },
+      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
+      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/eliana" },
+      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
     ]
   }
 ]

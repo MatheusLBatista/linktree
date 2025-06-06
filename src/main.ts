@@ -24,7 +24,7 @@ function card(selected: any) {
           ${selected.links.map((link: any) => {
             return `
               <li class='social-media-link'>
-                <img src="/icone/${link.icone}" alt="Ícone ${link.texto}">
+                <img src="/icons/${link.icone}" alt="Ícone ${link.texto}">
                 <a href="${link.url}">${link.texto}</a>
               </li>
             `
