@@ -10,14 +10,51 @@ function getID(): string | null {
 function card(selected: any) {
   if (!container) return;
 
-  let backgroundStyle = '';
+  // Limpa o container primeiro
+  container.innerHTML = '';
+
+  // Cria a div de overlay de fundo
+  const backgroundOverlay = document.createElement('div');
+  backgroundOverlay.className = 'background-overlay';
+  
   if (selected.background.tipo === 'imagem') {
-    backgroundStyle = `url('${selected.background.valor}') no-repeat center/cover`;
+    backgroundOverlay.style.background = `url('${selected.background.valor}') no-repeat center/cover`;
   } else {
-    backgroundStyle = selected.background.valor;
+    backgroundOverlay.style.background = selected.background.valor;
   }
 
-  container.style.background = backgroundStyle;
+  // Cria a div de conteúdo
+  const contentDiv = document.createElement('div');
+  contentDiv.className = 'content';
+
+  // Adiciona o conteúdo HTML
+  contentDiv.innerHTML = `
+    <div class="profile">
+      <img src="${selected.fotoUrl}" alt="User picture">
+    </div>
+    <div class="name" style="color: ${selected.estilos.corTexto}">
+      <h2>${selected.nome}</h2>
+    </div>
+    <div class="links">
+      <ul>
+        ${selected.links.map((link: any) => `
+          <li class='social-media-link'>
+              <img src="/icons/${link.icone}-icon.png" alt="Ícone ${link.texto}">
+              <a href="${link.url}">${link.texto}</a>
+            </li>
+        `).join('')}
+      </ul>
+    </div>
+    <div class="qr-code">
+      <img src="${selected.qrcode}" alt="QR-Code">
+    </div>
+  `;
+
+  // Adiciona os elementos ao container
+  container.appendChild(backgroundOverlay);
+  container.appendChild(contentDiv);
+
+  // Aplica os estilos restantes
   container.style.setProperty('--link-color', selected.estilos.corLink);
   container.style.setProperty('--link-color-hover', selected.estilos.corLinkHover);
   container.style.setProperty('--hover-color', selected.estilos.corHover);
@@ -26,28 +63,6 @@ function card(selected: any) {
   container.style.setProperty('--link-bg', selected.estilos.background);
   container.style.setProperty('--border', selected.estilos.border);
   container.style.setProperty('--border-hover', selected.estilos.borderHover);
-
-  container.innerHTML = `
-      <div class="profile">
-        <img src="${selected.fotoUrl}" alt="Foto usuário">
-      </div>
-      <div class="name" style="color: ${selected.estilos.corTexto}">
-        <h2>${selected.nome}</h2>
-      </div>
-      <div class="links">
-        <ul>
-          ${selected.links.map((link: any) => `
-            <li class='social-media-link'>
-                <img src="/icons/${link.icone}-icon.png" alt="Ícone ${link.texto}">
-                <a href="${link.url}">${link.texto}</a>
-              </li>
-          `).join('')}
-        </ul>
-      </div>
-      <div class="qr-code">
-        <img src="${selected.qrcode}" alt="QR-Code">
-      </div>
-    `;
 }
 
 async function getData() {
