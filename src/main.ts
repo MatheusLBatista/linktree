@@ -8,14 +8,15 @@ function getID(): string | null {
 }
 
 function card(selected: any) {
-  if(!container) return;
+  if (!container) return;
 
   container.innerHTML = `
+    <div class="content" style="background: ${selected.background.valor};">
       <div class="profile-pic">
         <img src="${selected.fotoUrl}" alt="Foto de perfil">
       </div>
 
-      <div class="name">
+      <div class="name" style="color: ${selected.estilos.corTexto};">
         <h2>${selected.nome}</h2>
       </div>
 
@@ -23,11 +24,12 @@ function card(selected: any) {
         <ul>
           ${selected.links.map((link: any) => {
             return `
-              <li class='social-media-link'>
+              <li class='social-media-link' 
+              style="background-color: ${selected.estilos.corLink}; border-radius: ${selected.estilos.borderRadius};">
                 <img src="/icons/${link.icone}" alt="Ícone ${link.texto}">
-                <a href="${link.url}">${link.texto}</a>
+                <a style="color: ${selected.estilos.corTexto};" href="${link.url}">${link.texto}</a>
               </li>
-            `
+            `;
           }).join('')}
         </ul>
       </div>
@@ -35,7 +37,8 @@ function card(selected: any) {
       <div class="qr-code">
         <img src="" alt="QR-Code">
       </div>
-    `;
+    </div>
+  `;
 }
 
 async function getData() {

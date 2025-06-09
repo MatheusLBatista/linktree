@@ -1,16 +1,16 @@
 [
   {
     "id": "1",
-    "nome": "Emília Andrade",
+    "nome": "João Andrade",
     "fotoUrl": "/img/person-one.png",
     "background": {
       "tipo": "imagem",
-      "valor": "/backgrounds/bg-emilia.jpg"
+      "valor": "/img/forest.jpg"
     },
     "estilos": {
       "corLink": "#ffffff",
       "corHover": "#e0e0e0",
-      "corTexto": "#ffffff",
+      "corTexto": "#000000",
       "borderRadius": "8px"
     },
     "links": [
