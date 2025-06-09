@@ -10,35 +10,47 @@ function getID(): string | null {
 function card(selected: any) {
   if (!container) return;
 
-  container.innerHTML = `
-    <div class="content" style="background: ${selected.background.valor};">
-      <div class="profile-pic">
-        <img src="${selected.fotoUrl}" alt="Foto de perfil">
-      </div>
+  let backgroundStyle = '';
+  if (selected.background.tipo === 'imagem') {
+    backgroundStyle = `url('${selected.background.valor}') no-repeat center/cover`;
+  } else if (selected.background.tipo === 'cor') {
+    backgroundStyle = selected.background.valor;
+  } else if (selected.background.tipo === 'gradiente') {
+    backgroundStyle = selected.background.valor;
+  }
+  const qrCodeSrc = selected.qrcode;
 
-      <div class="name" style="color: ${selected.estilos.corTexto};">
+  container.innerHTML = `
+      <div class="profile">
+        <img src="${selected.fotoUrl}" alt="Foto usuário">
+      </div>
+      <div class="name" style="color: ${selected.estilos.corTexto}">
         <h2>${selected.nome}</h2>
       </div>
-
       <div class="links">
         <ul>
-          ${selected.links.map((link: any) => {
-            return `
-              <li class='social-media-link' 
-              style="background-color: ${selected.estilos.corLink}; border-radius: ${selected.estilos.borderRadius};">
-                <img src="/icons/${link.icone}" alt="Ícone ${link.texto}">
-                <a style="color: ${selected.estilos.corTexto};" href="${link.url}">${link.texto}</a>
+          ${selected.links.map((link: any) => `
+            <li class='social-media-link'>
+                <img src="/icons/${link.icone}-icon.png" alt="Ícone ${link.texto}">
+                <a href="${link.url}">${link.texto}</a>
               </li>
-            `;
-          }).join('')}
+          `).join('')}
         </ul>
       </div>
-
       <div class="qr-code">
-        <img src="" alt="QR-Code">
+        <img src="${qrCodeSrc}" alt="QR-Code">
       </div>
-    </div>
-  `;
+    `;
+
+  container.style.background = backgroundStyle;
+  container.style.setProperty('--link-color', selected.estilos.corLink);
+  container.style.setProperty('--link-color-hover', selected.estilos.corLinkHover);
+  container.style.setProperty('--hover-color', selected.estilos.corHover);
+  container.style.setProperty('--text-color', selected.estilos.corTexto);
+  container.style.setProperty('--border-radius', selected.estilos.borderRadius);
+  container.style.setProperty('--link-bg', selected.estilos.background);
+  container.style.setProperty('--border', selected.estilos.border);
+  container.style.setProperty('--border-hover', selected.estilos.borderHover);
 }
 
 async function getData() {

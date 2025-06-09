@@ -1,134 +1,166 @@
 [
   {
     "id": "1",
-    "nome": "João Andrade",
+    "nome": "José Silva",
     "fotoUrl": "/img/person-one.png",
     "background": {
       "tipo": "imagem",
-      "valor": "/img/forest.jpg"
+      "valor": "img/forest.jpg"
     },
     "estilos": {
       "corLink": "#ffffff",
-      "corHover": "#e0e0e0",
+      "corLinkHover": "#ffffff",
+      "corHover": "#3B81D8",
+      "background": "#6DA9F3",
       "corTexto": "#000000",
-      "borderRadius": "8px"
+      "borderRadius": "4px",
+      "border": "0",
+      "borderHover": "0"
     },
     "links": [
-      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/emilia" },
-      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/emilia" },
-      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/emilia" },
-      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:emilia@exemplo.com" }
-    ]
+      { "icone": "wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github", "texto": "GitHub", "url": "https://github.com/jose" },
+      { "icone": "gitlab", "texto": "GitLab", "url": "https://gitlab.com/jose" },
+      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/jose" },
+      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/jose" },
+      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:jose@exemplo.com" }
+    ],
+    "qrcode": "img/qr-code-2.png"
   },
   {
     "id": "2",
-    "nome": "Tereza Oliveira",
-    "fotoUrl": "/fotos/tereza.jpg",
+    "nome": "Mario Pereira",
+    "fotoUrl": "/img/person-two.png",
     "background": {
       "tipo": "imagem",
-      "valor": "/backgrounds/bg-tereza.jpg"
+      "valor": "/img/house.jpg"
     },
     "estilos": {
       "corLink": "#ffffff",
-      "corHover": "#c2f0c2",
-      "corTexto": "#ffffff",
-      "borderRadius": "8px"
+      "corLinkHover": "#ffffff",
+      "corHover": "#159128",
+      "background": "#3AB74D",
+       "corTexto": "#000000",
+      "borderRadius": "0",
+      "border": "0",
+      "borderHover": "0"
     },
     "links": [
-      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/tereza" },
-      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/tereza" },
-      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/tereza" },
-      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:tereza@exemplo.com" }
-    ]
+      { "icone": "wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github", "texto": "GitHub", "url": "https://github.com/mario" },
+      { "icone": "gitlab", "texto": "GitLab", "url": "https://gitlab.com/mario" },
+      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/mario" },
+      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/mario" },
+      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:mario@exemplo.com" }
+    ],
+    "qrcode": "/public/assets/images/qrcode-tereza.png"
   },
   {
     "id": "3",
     "nome": "Marco Andrade",
-    "fotoUrl": "/fotos/marco.jpg",
+    "fotoUrl": "/public/assets/images/marco.png",
     "background": {
       "tipo": "cor",
       "valor": "#ff6f6f"
     },
     "estilos": {
       "corLink": "#000000",
-      "corHover": "#555555",
-      "corTexto": "#000000",
-      "borderRadius": "12px"
+      "corLinkHover": "#FFFFFF",
+      "corHover": "#D8565E",
+      "background": "#F1F1F1",
+      "corTexto": "#FFFFFF",
+      "borderRadius": "16px",
+      "border": "0",
+      "borderHover": "1px solid #ffffff"
     },
     "links": [
-      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/marco" },
-      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/marco" },
-      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/marco" },
-      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:marco@exemplo.com" }
-    ]
+      { "icone": "Wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "Github", "texto": "GitHub", "url": "https://github.com/marco" },
+      { "icone": "Linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/marco" },
+      { "icone": "Instagram", "texto": "Instagram", "url": "https://instagram.com/marco" },
+      { "icone": "Mail", "texto": "Enviar um e-mail", "url": "mailto:marco@exemplo.com" }
+    ],
+    "qrcode": "/public/assets/images/qrcode-marco.png"
   },
   {
     "id": "4",
     "nome": "José Silva",
-    "fotoUrl": "/fotos/jose.jpg",
+    "fotoUrl": "/public/assets/images/jose.png",
     "background": {
       "tipo": "cor",
       "valor": "#ffcc40"
     },
     "estilos": {
-      "corLink": "#ffffff",
-      "corHover": "#ffdd66",
+      "corLink": "#000000",
+      "corLinkHover": "#000000",
+      "corHover": "#F1B924",
+      "background": "#F1F1F1",
       "corTexto": "#000000",
-      "borderRadius": "20px"
+      "borderRadius": "32px",
+      "border": "0",
+      "borderHover": "0"
     },
     "links": [
-      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/jose" },
-      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/jose" },
-      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/jose" },
-      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:jose@exemplo.com" }
-    ]
+      { "icone": "Wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "Github", "texto": "GitHub", "url": "https://github.com/jose" },
+      { "icone": "Linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/jose" },
+      { "icone": "Instagram", "texto": "Instagram", "url": "https://instagram.com/jose" },
+      { "icone": "Mail", "texto": "Enviar um e-mail", "url": "mailto:jose@exemplo.com" }
+    ],
+    "qrcode": "/public/assets/images/qrcode-jose.png"
   },
   {
     "id": "5",
     "nome": "Eliana Silva",
-    "fotoUrl": "/fotos/eliana.jpg",
+    "fotoUrl": "/public/assets/images/eliana.png",
     "background": {
-      "tipo": "cor",
-      "valor": "#5f5f5f"
+      "tipo": "gradiente",
+      "valor": "linear-gradient(to bottom, #535155, #B7B2BB)"
     },
     "estilos": {
       "corLink": "#dcdcdc",
-      "corHover": "#ffffff",
+      "corLinkHover": "#dcdcdc",
+      "corHover": "#222124",
+      "background": "#535155",
       "corTexto": "#ffffff",
-      "borderRadius": "4px"
+      "borderRadius": "4px",
+      "border": "0",
+      "borderHover": "0"
     },
     "links": [
-      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/eliana" },
-      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
-      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/eliana" },
-      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
-    ]
+      { "icone": "Wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "Github", "texto": "GitHub", "url": "https://github.com/eliana" },
+      { "icone": "Linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
+      { "icone": "Instagram", "texto": "Instagram", "url": "https://instagram.com/eliana" },
+      { "icone": "Mail", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
+    ],
+    "qrcode": "/public/assets/images/qrcode-eliana.png"
   },
   {
     "id": "6",
     "nome": "Eliana Silva",
-    "fotoUrl": "/fotos/eliana.jpg",
+    "fotoUrl": "/public/assets/images/eliana.png",
     "background": {
       "tipo": "gradiente",
       "valor": "linear-gradient(to bottom, #64c7c0, #84d1f0)"
     },
     "estilos": {
       "corLink": "#ffffff",
-      "corHover": "#d0faff",
+      "corLinkHover": "#ffffff",
+      "corHover": "#222124",
+      "background": "0",
       "corTexto": "#ffffff",
-      "borderRadius": "32px"
+      "borderRadius": "32px",
+      "border": "1px solid #ffffff",
+      "borderHover": "0"
     },
     "links": [
-      { "icone": "wifi-icon.png", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "github-icon.png", "texto": "GitHub", "url": "https://github.com/eliana" },
-      { "icone": "linkedin-icon.png", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
-      { "icone": "instagram-icon.png", "texto": "Instagram", "url": "https://instagram.com/eliana" },
-      { "icone": "email-icon.png", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
-    ]
+      { "icone": "Wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "Github", "texto": "GitHub", "url": "https://github.com/eliana" },
+      { "icone": "Linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
+      { "icone": "Instagram", "texto": "Instagram", "url": "https://instagram.com/eliana" },
+      { "icone": "Mail", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
+    ],
+    "qrcode": "/public/assets/images/qrcode-eliana.png"
   }
 ]
