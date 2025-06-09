@@ -13,12 +13,19 @@ function card(selected: any) {
   let backgroundStyle = '';
   if (selected.background.tipo === 'imagem') {
     backgroundStyle = `url('${selected.background.valor}') no-repeat center/cover`;
-  } else if (selected.background.tipo === 'cor') {
-    backgroundStyle = selected.background.valor;
-  } else if (selected.background.tipo === 'gradiente') {
+  } else {
     backgroundStyle = selected.background.valor;
   }
-  const qrCodeSrc = selected.qrcode;
+
+  container.style.background = backgroundStyle;
+  container.style.setProperty('--link-color', selected.estilos.corLink);
+  container.style.setProperty('--link-color-hover', selected.estilos.corLinkHover);
+  container.style.setProperty('--hover-color', selected.estilos.corHover);
+  container.style.setProperty('--text-color', selected.estilos.corTexto);
+  container.style.setProperty('--border-radius', selected.estilos.borderRadius);
+  container.style.setProperty('--link-bg', selected.estilos.background);
+  container.style.setProperty('--border', selected.estilos.border);
+  container.style.setProperty('--border-hover', selected.estilos.borderHover);
 
   container.innerHTML = `
       <div class="profile">
@@ -38,19 +45,9 @@ function card(selected: any) {
         </ul>
       </div>
       <div class="qr-code">
-        <img src="${qrCodeSrc}" alt="QR-Code">
+        <img src="${selected.qrcode}" alt="QR-Code">
       </div>
     `;
-
-  container.style.background = backgroundStyle;
-  container.style.setProperty('--link-color', selected.estilos.corLink);
-  container.style.setProperty('--link-color-hover', selected.estilos.corLinkHover);
-  container.style.setProperty('--hover-color', selected.estilos.corHover);
-  container.style.setProperty('--text-color', selected.estilos.corTexto);
-  container.style.setProperty('--border-radius', selected.estilos.borderRadius);
-  container.style.setProperty('--link-bg', selected.estilos.background);
-  container.style.setProperty('--border', selected.estilos.border);
-  container.style.setProperty('--border-hover', selected.estilos.borderHover);
 }
 
 async function getData() {

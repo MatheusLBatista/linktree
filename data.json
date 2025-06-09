@@ -25,7 +25,7 @@
       { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/jose" },
       { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:jose@exemplo.com" }
     ],
-    "qrcode": "img/qr-code-2.png"
+    "qrcode": "/img/qr-code-1.png"
   },
   {
     "id": "2",
@@ -53,12 +53,12 @@
       { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/mario" },
       { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:mario@exemplo.com" }
     ],
-    "qrcode": "/public/assets/images/qrcode-tereza.png"
+    "qrcode": "/img/qr-code-2.png"
   },
   {
     "id": "3",
-    "nome": "Marco Andrade",
-    "fotoUrl": "/public/assets/images/marco.png",
+    "nome": "William Smith",
+    "fotoUrl": "/img/person-three.png",
     "background": {
       "tipo": "cor",
       "valor": "#ff6f6f"
@@ -74,18 +74,19 @@
       "borderHover": "1px solid #ffffff"
     },
     "links": [
-      { "icone": "Wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "Github", "texto": "GitHub", "url": "https://github.com/marco" },
-      { "icone": "Linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/marco" },
-      { "icone": "Instagram", "texto": "Instagram", "url": "https://instagram.com/marco" },
-      { "icone": "Mail", "texto": "Enviar um e-mail", "url": "mailto:marco@exemplo.com" }
+      { "icone": "black-wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "black-github", "texto": "GitHub", "url": "https://github.com/mario" },
+      { "icone": "black-gitlab", "texto": "GitLab", "url": "https://gitlab.com/mario" },
+      { "icone": "black-linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/mario" },
+      { "icone": "black-instagram", "texto": "Instagram", "url": "https://instagram.com/mario" },
+      { "icone": "black-email", "texto": "Enviar um e-mail", "url": "mailto:mario@exemplo.com" }
     ],
-    "qrcode": "/public/assets/images/qrcode-marco.png"
+    "qrcode": "/img/qr-code-3.png"
   },
   {
     "id": "4",
-    "nome": "José Silva",
-    "fotoUrl": "/public/assets/images/jose.png",
+    "nome": "Mariana Silva",
+    "fotoUrl": "/img/person-four.png",
     "background": {
       "tipo": "cor",
       "valor": "#ffcc40"
@@ -101,18 +102,19 @@
       "borderHover": "0"
     },
     "links": [
-      { "icone": "Wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "Github", "texto": "GitHub", "url": "https://github.com/jose" },
-      { "icone": "Linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/jose" },
-      { "icone": "Instagram", "texto": "Instagram", "url": "https://instagram.com/jose" },
-      { "icone": "Mail", "texto": "Enviar um e-mail", "url": "mailto:jose@exemplo.com" }
+      { "icone": "black-wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "black-github", "texto": "GitHub", "url": "https://github.com/mario" },
+      { "icone": "black-gitlab", "texto": "GitLab", "url": "https://gitlab.com/mario" },
+      { "icone": "black-linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/mario" },
+      { "icone": "black-instagram", "texto": "Instagram", "url": "https://instagram.com/mario" },
+      { "icone": "black-email", "texto": "Enviar um e-mail", "url": "mailto:mario@exemplo.com" }
     ],
-    "qrcode": "/public/assets/images/qrcode-jose.png"
+    "qrcode": "/img/qr-code-4.png"
   },
   {
     "id": "5",
     "nome": "Eliana Silva",
-    "fotoUrl": "/public/assets/images/eliana.png",
+    "fotoUrl": "/img/person-five.png",
     "background": {
       "tipo": "gradiente",
       "valor": "linear-gradient(to bottom, #535155, #B7B2BB)"
@@ -128,18 +130,19 @@
       "borderHover": "0"
     },
     "links": [
-      { "icone": "Wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "Github", "texto": "GitHub", "url": "https://github.com/eliana" },
-      { "icone": "Linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
-      { "icone": "Instagram", "texto": "Instagram", "url": "https://instagram.com/eliana" },
-      { "icone": "Mail", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
+      { "icone": "wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github", "texto": "GitHub", "url": "https://github.com/mario" },
+      { "icone": "gitlab", "texto": "GitLab", "url": "https://gitlab.com/mario" },
+      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/mario" },
+      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/mario" },
+      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:mario@exemplo.com" }
     ],
-    "qrcode": "/public/assets/images/qrcode-eliana.png"
+    "qrcode": "/img/qr-code-5.png"
   },
   {
     "id": "6",
     "nome": "Eliana Silva",
-    "fotoUrl": "/public/assets/images/eliana.png",
+    "fotoUrl": "/img/person-five.png",
     "background": {
       "tipo": "gradiente",
       "valor": "linear-gradient(to bottom, #64c7c0, #84d1f0)"
@@ -155,12 +158,13 @@
       "borderHover": "0"
     },
     "links": [
-      { "icone": "Wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
-      { "icone": "Github", "texto": "GitHub", "url": "https://github.com/eliana" },
-      { "icone": "Linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/eliana" },
-      { "icone": "Instagram", "texto": "Instagram", "url": "https://instagram.com/eliana" },
-      { "icone": "Mail", "texto": "Enviar um e-mail", "url": "mailto:eliana@exemplo.com" }
+      { "icone": "wifi", "texto": "Blog", "url": "https://exemplo.com/blog" },
+      { "icone": "github", "texto": "GitHub", "url": "https://github.com/mario" },
+      { "icone": "gitlab", "texto": "GitLab", "url": "https://gitlab.com/mario" },
+      { "icone": "linkedin", "texto": "LinkedIn", "url": "https://linkedin.com/in/mario" },
+      { "icone": "instagram", "texto": "Instagram", "url": "https://instagram.com/mario" },
+      { "icone": "email", "texto": "Enviar um e-mail", "url": "mailto:mario@exemplo.com" }
     ],
-    "qrcode": "/public/assets/images/qrcode-eliana.png"
+    "qrcode": "/img/qr-code-5.png"
   }
 ]
